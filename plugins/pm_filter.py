@@ -362,7 +362,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 g = short_url(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-                await client.send_message(chat_id=query.from_user.id,text = f"<b>📕𝗡ᴀᴍᴇ ➠ : {files.file_name}</b>", 
+                await client.send_photo(chat_id=query.from_user.id, photo='https://telegra.ph/file/3f2ff459b9d316133d1c8.jpg', caption = f"<b>📕𝗡ᴀᴍᴇ ➠ : {files.file_name}</b>", 
                                           reply_markup=InlineKeyboardMarkup(
             [
                 [
