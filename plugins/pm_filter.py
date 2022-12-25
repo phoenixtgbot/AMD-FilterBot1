@@ -366,7 +366,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                           reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🔰𝗛ᴏᴡ 𝗧ᴏ 𝗗ᴏᴡɴʟᴏᴀᴅ 🔰', url=H_DOWNLOAD_LINK)
+                    InlineKeyboardButton('⛑𝗛ᴏᴡ 𝗧ᴏ 𝗗ᴏᴡɴʟᴏᴀᴅ⛑', url=H_DOWNLOAD_LINK)
                 ],
                 [
                     InlineKeyboardButton('♻️ 𝗗ᴏᴡɴʟᴏᴀᴅ 𝗟ɪɴᴋ ♻️', url=g)
@@ -709,7 +709,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b> Ꮋᴇʟʟᴏ 👋 {message.from_user.mention} 📕 𝗬ᴏᴜʀ 𝗥ᴇϙ 𝗠ᴏᴠɪᴇ :</b><code>{search}</code> \n\n<i>This Message Will be Deleted in 5 Mins So Forward To Saved Message or Forward To Your Friends</i> \n\n<b>♻️ Ꮲᴏᴡᴇʀᴇᴅ Ᏼʏ ♻️</b> @AMD_LinkZz"
+        cap = f"<b> Ꮋᴇʟʟᴏ 👋 {message.from_user.mention} 📕 𝗬ᴏᴜʀ 𝗥ᴇϙ 𝗠ᴏᴠɪᴇ :</b><code>{search}</code> \n\n<i>This Message Will be Deleted in 5 Minutes </i> \n\n<b>♻️ Ꮲᴏᴡᴇʀᴇᴅ Ᏼʏ ♻️</b> @AMD_LinkZz"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
