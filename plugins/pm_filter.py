@@ -362,7 +362,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 g = short_url(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-                await client.send_photo(chat_id=query.from_user.id, photo='https://telegra.ph/file/3f2ff459b9d316133d1c8.jpg', caption = f"<b>📕𝗡ᴀᴍᴇ ➠ : {files.file_name}</b>", 
+                await client.send_photo(chat_id=query.from_user.id, photo='https://telegra.ph/file/3f2ff459b9d316133d1c8.jpg', caption = f"<b>📕𝗡ᴀᴍᴇ ➠ : {files.file_name} \n\n🔗𝗦ɪᴢᴇ ➠ : {file.file_size}</b>", 
                                           reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -371,7 +371,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 [
                     InlineKeyboardButton('♻️ 𝗗ᴏᴡɴʟᴏᴀᴅ 𝗟ɪɴᴋ ♻️', url=g)
                 ]]))
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('Check In Private Message, I have sent files in Private Message\n\nPrivate Message la Parunga,Neenga Ketta File Send Panniten', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -661,6 +661,12 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+        
+         btn.insert(0,
+        [
+            InlineKeyboardButton(text="⛑𝗛ᴏᴡ 𝗧ᴏ 𝗗ᴏᴡɴʟᴏᴀᴅ⛑", url='https://t.me/AMD_Discussion/7514')
+        ]
+    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
