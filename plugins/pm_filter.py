@@ -660,13 +660,7 @@ async def auto_filter(client, msg, spoll=False):
                 ),
             ]
             for file in files
-        ]    
-        
-     btn.insert(0,
-        [
-            InlineKeyboardButton(text='⛑𝗛ᴏᴡ 𝗧ᴏ 𝗗ᴏᴡɴʟᴏᴀᴅ⛑', url=H_DOWNLOAD_LINK)
-        ]
-     )    
+        ]        
             
     if offset != "":
         key = f"{message.chat.id}-{message.message_id}"
