@@ -366,10 +366,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                           reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚡ Telegram File Link - Dulink ⚡', url=g)
+                    InlineKeyboardButton('🔰𝗛ᴏᴡ 𝗧ᴏ 𝗗ᴏᴡɴʟᴏᴀᴅ 🔰', url=H_DOWNLOAD_LINK)
                 ],
                 [
-                    InlineKeyboardButton('How To Get Telegram File ⁉️', url=H_DOWNLOAD_LINK)
+                    InlineKeyboardButton('♻️ 𝗗ᴏᴡɴʟᴏᴀᴅ 𝗟ɪɴᴋ ♻️', url=g)
                 ]]))
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
