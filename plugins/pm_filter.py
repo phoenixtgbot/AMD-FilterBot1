@@ -362,7 +362,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 g = short_url(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-                await client.send_message(chat_id=query.from_user.id,text = f"<b>📕𝗡ᴀᴍᴇ ➠ : {files.file_name}\n----------------------</b>", 
+                await client.send_message(chat_id=query.from_user.id,text = f"<b>📕𝗡ᴀᴍᴇ ➠ : {files.file_name}</b>", 
                                           reply_markup=InlineKeyboardMarkup(
             [
                 [
