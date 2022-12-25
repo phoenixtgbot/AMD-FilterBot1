@@ -362,14 +362,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
             else:
                 g = short_url(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
-                await client.send_message(chat_id=query.from_user.id,text = f"<b>==> Title : {files.file_name}\n\n==> File_Size : {get_size(files.file_size)}</b>", 
+                await client.send_message(chat_id=query.from_user.id,text = f"📕𝗡ᴀᴍᴇ ➠ : {files.file_name}\n----------------------</b>", 
                                           reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚡ Telegram File Link - Dulink ⚡', url=g)
+                    InlineKeyboardButton('🔰𝗛ᴏᴡ 𝗧ᴏ 𝗗ᴏᴡɴʟᴏᴀᴅ 🔰', url=H_DOWNLOAD_LINK)
                 ],
                 [
-                    InlineKeyboardButton('How To Get Telegram File ⁉️', url=H_DOWNLOAD_LINK)
+                    InlineKeyboardButton('♻️ 𝗗ᴏᴡɴʟᴏᴀᴅ 𝗟ɪɴᴋ ♻️', url=g)
                 ]]))
                 await query.answer('Check PM, I have sent files in pm', show_alert=True)
         except UserIsBlocked:
