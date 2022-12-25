@@ -363,7 +363,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             else:
                 g = short_url(f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 await client.send_message(chat_id=query.from_user.id,text = f"<b>==> Title : {files.file_name}\n\n==> File_Size : {get_size(files.file_size)}</b>", 
-                                          reply_markup=reply_markup=InlineKeyboardMarkup(
+                                          reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton('⚡ Telegram File Link - Dulink ⚡', url=g)
