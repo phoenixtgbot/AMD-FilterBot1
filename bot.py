@@ -41,10 +41,19 @@ class Bot(Client):
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)
 
+User = Client(name="user-account",
+              session_string=DEL_SESSION,
+              api_id=API_ID,
+              api_hash=API_HASH,
+              workers=300
+              )
+
     async def stop(self, *args):
         await super().stop()
         logging.info("Bot stopped. Bye.")
 
+User.start()
+print("User Started!")
 
 app = Bot()
 app.run()
