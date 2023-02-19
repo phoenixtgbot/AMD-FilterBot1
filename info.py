@@ -66,5 +66,5 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 #Shortner
 SHORTENER = environ.get('SHORTENER', "amddisk.xyz")
-SHORTENER_API = environ.get('SHORTENER_API', "852a62dbf826aec6269b22c89c6283f367359460")
+SHORTENER_API = environ.get('SHORTENER_API', "ae936318138d5ce38cc8a3535e49bf93dbcdfe57")
 H_DOWNLOAD_LINK = environ.get('H_DOWNLOAD_LINK', "https://t.me/AMD_Discussion/7514")
