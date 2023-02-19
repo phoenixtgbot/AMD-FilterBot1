@@ -55,11 +55,9 @@ User = Client(name="userbot",
               workers=300
               )
 
-User.start()
-print("User Started!")
+hmf = User()
+hmf.run()
 
 idle()
 
-User.stop()
-print("User Stopped!")
 
