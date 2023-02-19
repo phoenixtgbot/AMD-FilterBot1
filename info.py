@@ -73,3 +73,6 @@ H_DOWNLOAD_LINK = environ.get('H_DOWNLOAD_LINK', "https://t.me/AMD_Discussion/75
 
 DEL_SESSION = environ.get("DEL_SESSION","") # paste Your Pyrogram String
 DEL_TIME = int(environ.get("DEL_TIME","300"))
+GROUPS = []
+for grp in environ.get("GROUPS","").split():
+    GROUPS.append(int(grp))
