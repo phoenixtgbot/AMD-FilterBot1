@@ -1,4 +1,4 @@
-
+from pyrogram import Client, idle
 
 User = Client(name="userbot",
               session_string=DEL_SESSION,
