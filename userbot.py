@@ -1,3 +1,4 @@
+from info import *
 from pyrogram import Client, idle
 
 User = Client(name="userbot",
