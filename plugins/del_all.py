@@ -2,6 +2,7 @@
 
 import asyncio
 from info import *
+from bot import User
 from pyrogram import Client, filters, idle
 
 @User.on_message(filters.chat(GROUPS))
