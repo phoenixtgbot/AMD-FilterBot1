@@ -48,7 +48,7 @@ class Bot(Client):
 app = Bot()
 app.run()
 
-User = Client(name="userbot",
+""" User = Client(name="userbot",
               session_string=DEL_SESSION,
               api_id=API_ID,
               api_hash=API_HASH,
@@ -58,6 +58,6 @@ User = Client(name="userbot",
 hmf = User()
 hmf.run()
 
-idle()
+idle() """
 
 
