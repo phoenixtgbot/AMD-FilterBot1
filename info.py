@@ -71,8 +71,8 @@ H_DOWNLOAD_LINK = environ.get('H_DOWNLOAD_LINK', "https://t.me/AMD_Discussion/75
 
 # Del All 
 
-DEL_SESSION = environ.get("DEL_SESSION","") # paste Your Pyrogram String
+DEL_SESSION = environ.get("DEL_SESSION","BQCAQ1pZ6E9Xs7asjCGTJrv9agzwJVv4OPT_GwD_0oJ0OyjdmoFZAF0NeODOEJYmFkvL0Vuvhgnf60h6Z_Rmynmf6qS_8fX6aK77UY28IBtYDzzG4vnZlldbSVrQ4UWNR1wtFOjPsvmsb41wlGD16luZh_HlFhqRe4B_ckBJTeXUEGdopg7DpLMrJRJ1pQQPCWENittvs_xL38ybS0oZV6ZFcvoMu_1tZ0U44NMdKhKA-SIAYJIiOG7rMaT0TJJv8OxP-itYhLZDeKnnNZCBudYkUK-dY0czVhAODs2K9CPzaCGhJJ7wmA_ntWgdqvVqbzRUCFq25LkVBQlYA02AABWJQnZcZwA") # paste Your Pyrogram String
 DEL_TIME = int(environ.get("DEL_TIME","300"))
 GROUPS = []
-for grp in environ.get("GROUPS","").split():
+for grp in environ.get("GROUPS","-1001805750891").split():
     GROUPS.append(int(grp))
