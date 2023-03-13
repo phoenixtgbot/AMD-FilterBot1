@@ -65,8 +65,8 @@ LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 #Shortner
-SHORTENER = environ.get('SHORTENER', "amddisk.xyz")
-SHORTENER_API = environ.get('SHORTENER_API', "ae936318138d5ce38cc8a3535e49bf93dbcdfe57")
+SHORTENER = environ.get('SHORTENER', "tamizhmasters.com")
+SHORTENER_API = environ.get('SHORTENER_API', "ed3c4405dd250f0d9eec5e8673fa0f83f78e4515")
 H_DOWNLOAD_LINK = environ.get('H_DOWNLOAD_LINK', "https://t.me/AMD_Discussion/7514")
 
 # Del All 
